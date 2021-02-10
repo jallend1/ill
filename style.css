@@ -5,9 +5,19 @@
   margin: auto;
 }
 
-ul {
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+nav {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  list-style: none;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav > div > img {
+  max-height: 200px;
+  border-radius: 50%;
 }
