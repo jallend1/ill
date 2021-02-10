@@ -1,0 +1,13 @@
+/* Brand color: #353535 */
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
