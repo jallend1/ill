@@ -1,8 +1,14 @@
 /* Brand color: #353535 */
 
+html {
+  height: 100vh;
+}
+
 .container {
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -10,8 +16,7 @@ header {
 }
 
 header > img {
-  max-width: 100%;
-  /* max-height: 300px; */
+  max-height: 300px;
 }
 
 h1 {
@@ -20,6 +25,7 @@ h1 {
 }
 
 nav {
+  padding: 1.25em;
   background-color: #e5e5e5;
   display: flex;
   flex-wrap: wrap;
