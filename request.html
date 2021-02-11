@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ILL Request Page</title>
+</head>
+<body>
+    <h1>Request an Item</h1>
+    <form id="user">
+        <ul>
+            <li>
+                <label for="barcode">Your library card number</label>
+                <input type="text" name="barcode" id="barcode">
+            </li>
+            <li>
+                <label for="first">First</label>
+                <input type="text" name="first" id="first">
+            </li>
+            <li>
+                <label for="last">Last</label>
+                <input type="text" name="last" id="last">
+            </li>
+            <li>
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </li>
+            <li>
+                <select name="location" id="location-select">
+                    <option value="">Select pickup location</option>
+                    <option value="loc">Library of Congress</option>
+                    <option value="home">Your House</option>
+                    <option value="amazon">Amazon Locker</option>
+                </select>
+            </li>
+
+        </ul>
+    </form>
+</body>
+</html>

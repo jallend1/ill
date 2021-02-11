@@ -37,3 +37,26 @@ nav > div > img {
   max-height: 200px;
   border-radius: 50%;
 }
+
+/* Request Page */
+#user > ul {
+  list-style: none;
+}
+
+#user li + li {
+  margin-top: 1em;
+}
+
+#user label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+#user input:focus {
+  border-color: #000;
+}
+
+#user select {
+  width: 200px;
+}
