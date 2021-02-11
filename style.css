@@ -39,8 +39,27 @@ nav > div > img {
 }
 
 /* Request Page */
+#request {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+#request img {
+  width: 50%;
+}
+
+#user {
+  max-width: 600px;
+  min-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 #user > ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #user li + li {
