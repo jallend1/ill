@@ -6,7 +6,10 @@ header {
 
 .image {
   width: 600px;
-  background-color: green;
+}
+
+.image > img {
+  max-width: 600px;
 }
 
 .people {
