@@ -33,7 +33,8 @@ nav {
   text-align: center;
 }
 
-nav > div > img {
+nav > div > img,
+nav > div > a > img {
   max-height: 200px;
   border-radius: 50%;
 }
