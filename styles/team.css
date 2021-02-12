@@ -5,7 +5,7 @@ header {
 }
 
 .image {
-  width: 300px;
+  width: 600px;
   background-color: green;
 }
 
@@ -25,4 +25,13 @@ h1 {
 
 div.person > img {
   height: 200px;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+}
+
+.profile-image > img {
+  max-width: 600px;
 }
