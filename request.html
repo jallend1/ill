@@ -10,7 +10,7 @@
   <body>
     <h1>Request an Item</h1>
     <div id="request">
-      <div>
+      <div id="splash">
         <img
           src="images/robot.jpg"
           alt="Robot awarding a kid a prize by some books"
@@ -21,7 +21,7 @@
         <form id="user">
           <ul>
             <li>
-              <label for="barcode">Your library card number</label>
+              <label for="barcode">Library card number</label>
               <input type="text" name="barcode" id="barcode" />
             </li>
             <li>
@@ -57,9 +57,7 @@
               <input type="text" name="year" id="year" />
             </li>
             <li>
-              <textarea name="details" id="details" cols="30" rows="10">
-Please enter any additional details that might help us track down your item.</textarea
-              >
+                <textarea name="details" id="details" cols="30" rows="10" placeholder="Please enter any additional details that might help us find your item."></textarea>
             </li>
             <li>
               <select name="location" id="location-select">
