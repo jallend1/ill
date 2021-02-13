@@ -1,0 +1,48 @@
+/* Request Page */
+#request {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+
+#splash {
+  margin: auto;
+}
+
+#request img {
+  max-height: 600px;
+}
+
+#user {
+  max-width: 600px;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+#user > ul {
+  list-style: none;
+}
+
+#user li + li {
+  margin-top: 1em;
+}
+
+#user label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+#user input:focus {
+  border-color: #000;
+}
+
+#user select {
+  width: 200px;
+}
+
+textarea {
+  margin: auto;
+}
