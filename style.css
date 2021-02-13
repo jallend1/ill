@@ -1,20 +1,18 @@
 /* Brand color: #353535 */
 
-html {
+body {
+  background-color: #457b9d;
   height: 100vh;
 }
 
 .container {
   width: 80%;
   margin: auto;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
+  background-color: #a8dadc;
 }
 
 header {
+  padding: 1em;
   text-align: center;
 }
 
