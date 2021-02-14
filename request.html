@@ -20,58 +20,97 @@
       </div>
       <div>
         <form id="user">
-          <ul>
-            <li>
-              <label for="barcode">Library card number</label>
-              <input type="text" name="barcode" id="barcode" />
-            </li>
-            <li>
-              <label for="first">First</label>
-              <input type="text" name="first" id="first" />
-            </li>
-            <li>
-              <label for="last">Last</label>
-              <input type="text" name="last" id="last" />
-            </li>
-            <li>
-              <label for="phone">Phone Number</label>
-              <input type="text" name="phone" id="phone" />
-            </li>
-            <li>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
-            </li>
-            <li>
-              <label for="title">Title</label>
-              <input type="text" name="title" id="title" />
-            </li>
-            <li>
-              <label for="author">Author(s)</label>
-              <input type="text" name="author" id="author" />
-            </li>
-            <li>
-              <label for="isbn">ISBN</label>
-              <input type="text" name="isbn" id="isbn" />
-            </li>
-            <li>
-              <label for="year">Year Published</label>
-              <input type="text" name="year" id="year" />
-            </li>
-            <li>
-                <textarea name="details" id="details" cols="30" rows="10" placeholder="Please enter any additional details that might help us find your item."></textarea>
-            </li>
-            <li>
+          <div class="field is-horizontal">
+            <div class="field-label is-medium">
+              <label class="label">Your Information</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <label for="barcode" class="label">Library Barcode</label>
+                <div class="control">
+                  <input type="text" name="barcode" id="barcode" placeholder="Barcode"/>
+                </div>
+                <p class="help">Located on the back of your library card</p>
+              </div>
+              <div class="field">
+                <label for="name" class="label">Your Name</label>
+                <div class="control">
+                  <input type="text" name="name" id="name" placeholder="Your name" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label"></div>
+            <div class="field-body">
+              <div class="field">
+                <label class="label" for="phone">Phone Number</label>
+                <div class="control">
+                  <input type="text" name="phone" id="phone" />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="email">Email</label>
+                <div class="control">
+                  <input type="email" name="email" id="email" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-medium">
+              <label class="label">Item Details</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <label class="label" for="title">Title</label>
+                <div class="control">
+                  <input type="text" name="title" id="title" />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="author">Author(s)</label>
+                <div class="control">
+                  <input type="text" name="author" id="author" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label"></div>
+            <div class="field-body">
+              <div class="field">
+                <label class="label" for="isbn">ISBN</label>
+                <div class="control">
+                  <input type="text" name="isbn" id="isbn" />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="year">Year Published</label>
+                <div class="control">
+                  <input type="text" name="year" id="year" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea" name="details" id="details" cols="30" rows="10" placeholder="Please enter any additional details that might help us find your item."></textarea>
+            </div>
+          </div>
+          <div class="control">
+            <div class="select">
               <select name="location" id="location-select">
                 <option value="">Select pickup location</option>
                 <option value="loc">Library of Congress</option>
                 <option value="home">Your House</option>
                 <option value="amazon">Amazon Locker</option>
               </select>
-            </li>
-            <li>
-              <button>Submit Request</button>
-            </li>
-          </ul>
+            </div>
+          </div>            
+          <div class="control">
+            <button class="button is-primary">Submit Request</button>
+          </div>
         </form>
       </div>
     </div>
