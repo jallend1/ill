@@ -9,54 +9,59 @@
     <title>ILL Request Page</title>
   </head>
   <body>
-    <h1>Request an Item</h1>
-    <div id="request">
-      <div id="splash">
-        <img
-          src="images/robot.png"
-          alt="Robot awarding a kid a prize by some books"
-        />
+    <div class="container columns is-vcentered">
+      <div class="column" id="splash">
+        <h1>Request an Item</h1>
+        <figure class="image">
+          <img
+            src="images/robot.png"
+            alt="Robot awarding a kid a prize by some books"
+          />
+        </figure>
         <!-- <a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a> -->
       </div>
-      <div>
+      <div class="column is-two-thirds">
         <form id="user">
-          <div class="field is-horizontal">
-            <div class="field-label is-medium">
-              <label class="label">Your Information</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <label for="barcode" class="label">Library Barcode</label>
+          <div class="box">
+            <div class="field is-horizontal">
+              <div class="field-label is-medium">
+                <label class="label">Your Information</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <label for="barcode" class="label">Library Barcode</label>
                 <div class="control">
-                  <input type="text" name="barcode" id="barcode" placeholder="Barcode"/>
+                  <input class="input" type="text" name="barcode" id="barcode" placeholder="Barcode"/>
                 </div>
                 <p class="help">Located on the back of your library card</p>
-              </div>
-              <div class="field">
-                <label for="name" class="label">Your Name</label>
-                <div class="control">
-                  <input type="text" name="name" id="name" placeholder="Your name" />
+                </div>
+                <div class="field">
+                  <label for="name" class="label">Name</label>
+                  <div class="control">
+                    <input class="input" type="text" name="name" id="name" placeholder="Your name" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           <div class="field is-horizontal">
             <div class="field-label"></div>
             <div class="field-body">
               <div class="field">
                 <label class="label" for="phone">Phone Number</label>
                 <div class="control">
-                  <input type="text" name="phone" id="phone" />
+                  <input class="input" type="text" name="phone" id="phone" />
                 </div>
               </div>
               <div class="field">
                 <label class="label" for="email">Email</label>
                 <div class="control">
-                  <input type="email" name="email" id="email" />
+                  <input class="input" type="email" name="email" id="email" />
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="box">
           <div class="field is-horizontal">
             <div class="field-label is-medium">
               <label class="label">Item Details</label>
@@ -65,13 +70,13 @@
               <div class="field">
                 <label class="label" for="title">Title</label>
                 <div class="control">
-                  <input type="text" name="title" id="title" />
+                  <input class="input" type="text" name="title" id="title" />
                 </div>
               </div>
               <div class="field">
                 <label class="label" for="author">Author(s)</label>
                 <div class="control">
-                  <input type="text" name="author" id="author" />
+                  <input class="input" type="text" name="author" id="author" />
                 </div>
               </div>
             </div>
@@ -82,13 +87,13 @@
               <div class="field">
                 <label class="label" for="isbn">ISBN</label>
                 <div class="control">
-                  <input type="text" name="isbn" id="isbn" />
+                  <input class="input" type="text" name="isbn" id="isbn" />
                 </div>
               </div>
               <div class="field">
                 <label class="label" for="year">Year Published</label>
                 <div class="control">
-                  <input type="text" name="year" id="year" />
+                  <input class="input" type="text" name="year" id="year" />
                 </div>
               </div>
             </div>
@@ -98,6 +103,7 @@
               <textarea class="textarea" name="details" id="details" cols="30" rows="10" placeholder="Please enter any additional details that might help us find your item."></textarea>
             </div>
           </div>
+        </div>
           <div class="control">
             <div class="select">
               <select name="location" id="location-select">
@@ -109,8 +115,8 @@
             </div>
           </div>            
           <div class="control">
-            <button class="button is-primary">Submit Request</button>
-          </div>
+            <button class="button is-large is-primary is-fullwidth is-rounded">Submit Request</button>
+          </div> 
         </form>
       </div>
     </div>
