@@ -10,9 +10,23 @@
     <title>ILL Request Page</title>
   </head>
   <body>
-    <div class="container columns is-vcentered">
-      <div class="column" id="splash">
-        <h1>Request an Item</h1>
+    <nav class="navbar is-dark">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">A Generic Public Library System</a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a href="request.html" class="navbar-item is-active">Submit a Request</a>
+          <a href="team.html" class="navbar-item">Meet the Team</a>
+          <a href="faq.html" class="navbar-item">FAQ</a>
+          <a href="details.html" class="navbar-item">Stats</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container columns">
+      <div class="column">
+        <h1 class="title is-1 has-text-centered">Request an Interlibrary Loan</h1>
+        <h2 class="subtitle is-6 has-text-centered">Services provided by A Generic Library System</h2>
         <figure class="image">
           <img
             src="images/robot.png"
@@ -21,7 +35,7 @@
         </figure>
         <!-- <a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a> -->
       </div>
-      <div class="column is-two-thirds">
+      <div class="column">
         <form id="user">
           <div class="box">
             <div class="field is-horizontal">
@@ -58,7 +72,7 @@
               <div class="field">
                 <label class="label" for="phone">Phone Number</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                  <input class="input" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555"/>
                   <span class="icon is-left">
                     <i class="material-icons">phone</i>
                   </span>
@@ -87,7 +101,7 @@
               <div class="field">
                 <label class="label" for="title">Title</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="text" name="title" id="title" />
+                  <input class="input" type="text" name="title" id="title" placeholder="e.g. Beauty and Sadness"/>
                   <span class="icon is-left">
                     <i class="material-icons">book</i>
                   </span>
@@ -96,7 +110,7 @@
               <div class="field">
                 <label class="label" for="author">Author(s)</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="text" name="author" id="author" />
+                  <input class="input" type="text" name="author" id="author" placeholder="e.g. Yasunari Kawabata"/>
                   <span class="icon is-left">
                     <i class="material-icons">person</i>
                   </span>
@@ -137,24 +151,33 @@
               </div>
             </div>
           </div>
+          <div class="field is-horizontal">
+            <div class="field-label"></div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control has-icons-left is-medium">
+                  <div class="select is-rounded is-medium is-centered">
+                    <select name="location" id="location-select">
+                      <option value="">Select pickup location</option>
+                      <option value="loc">Library of Congress</option>
+                      <option value="home">Home Delivery</option>
+                      <option value="amazon">Amazon Locker</option>
+                    </select>
+                  </div>
+                  <div class="icon is-left">
+                    <i class="material-icons">local_library</i>
+                  </div>
+                </div>            
+              </div>  
+            </div>
+          </div>  
         </div>
-          <div class="control has-icons-left">
-            <div class="select is-rounded is-medium">
-              <select name="location" id="location-select">
-                <option value="">Select pickup location</option>
-                <option value="loc">Library of Congress</option>
-                <option value="home">Your House</option>
-                <option value="amazon">Amazon Locker</option>
-              </select>
-            </div>
-            <div class="icon is-left">
-              <i class="material-icons">local_library</i>
-            </div>
-          </div>            
+        <div class="field">
           <div class="control">
             <button class="button is-large is-primary is-fullwidth is-rounded">Submit Request</button>
           </div> 
-        </form>
+        </div>
+      </form>
       </div>
     </div>
   </body>
