@@ -2,17 +2,15 @@
 
 body {
   background-color: #457b9d;
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
   width: 80%;
-  margin: auto;
   background-color: #a8dadc;
 }
 
 header {
-  padding: 1em;
   text-align: center;
 }
 

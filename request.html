@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./styles/request.css" />
     <title>ILL Request Page</title>
   </head>
@@ -30,15 +31,23 @@
               <div class="field-body">
                 <div class="field">
                   <label for="barcode" class="label">Library Barcode</label>
-                <div class="control">
+                <div class="control has-icons-left">
                   <input class="input" type="text" name="barcode" id="barcode" placeholder="Barcode"/>
+                  <span class="icon is-left">
+                    <i class="material-icons">
+                      credit_card
+                    </i>
+                    </span>
                 </div>
                 <p class="help">Located on the back of your library card</p>
                 </div>
                 <div class="field">
                   <label for="name" class="label">Name</label>
-                  <div class="control">
+                  <div class="control has-icons-left">
                     <input class="input" type="text" name="name" id="name" placeholder="Your name" />
+                    <span class="icon is-left">
+                      <i class="material-icons">person</i>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -48,14 +57,22 @@
             <div class="field-body">
               <div class="field">
                 <label class="label" for="phone">Phone Number</label>
-                <div class="control">
-                  <input class="input" type="text" name="phone" id="phone" />
+                <div class="control has-icons-left">
+                  <input class="input" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                  <span class="icon is-left">
+                    <i class="material-icons">phone</i>
+                  </span>
                 </div>
+                <p class="help">Format: 123-456-7890</p>
+                
               </div>
               <div class="field">
                 <label class="label" for="email">Email</label>
-                <div class="control">
-                  <input class="input" type="email" name="email" id="email" />
+                <div class="control has-icons-left">
+                  <input class="input" type="email" name="email" id="email" placeholder="me@example.com" />
+                  <span class="icon is-left">
+                    <i class="material-icons">email</i>
+                  </span>
                 </div>
               </div>
             </div>
@@ -69,14 +86,20 @@
             <div class="field-body">
               <div class="field">
                 <label class="label" for="title">Title</label>
-                <div class="control">
+                <div class="control has-icons-left">
                   <input class="input" type="text" name="title" id="title" />
+                  <span class="icon is-left">
+                    <i class="material-icons">book</i>
+                  </span>
                 </div>
               </div>
               <div class="field">
                 <label class="label" for="author">Author(s)</label>
-                <div class="control">
+                <div class="control has-icons-left">
                   <input class="input" type="text" name="author" id="author" />
+                  <span class="icon is-left">
+                    <i class="material-icons">person</i>
+                  </span>
                 </div>
               </div>
             </div>
@@ -86,32 +109,46 @@
             <div class="field-body">
               <div class="field">
                 <label class="label" for="isbn">ISBN</label>
-                <div class="control">
+                <div class="control has-icons-left">
                   <input class="input" type="text" name="isbn" id="isbn" />
+                  <span class="icon is-left">
+                    <i class="material-icons">school</i>
+                  </span>
                 </div>
               </div>
               <div class="field">
                 <label class="label" for="year">Year Published</label>
-                <div class="control">
+                <div class="control has-icons-left">
                   <input class="input" type="text" name="year" id="year" />
+                  <span class="icon is-left">
+                    <i class="material-icons">copyright</i>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="field">
-            <div class="control">
-              <textarea class="textarea" name="details" id="details" cols="30" rows="10" placeholder="Please enter any additional details that might help us find your item."></textarea>
+          <div class="field is-horizontal">
+            <div class="field-label"></div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea is-primary is-medium has-fixed-size" name="details" id="details" cols="20" rows="5" placeholder="Please enter any additional details that might help us find your item."></textarea>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-          <div class="control">
-            <div class="select">
+          <div class="control has-icons-left">
+            <div class="select is-rounded is-medium">
               <select name="location" id="location-select">
                 <option value="">Select pickup location</option>
                 <option value="loc">Library of Congress</option>
                 <option value="home">Your House</option>
                 <option value="amazon">Amazon Locker</option>
               </select>
+            </div>
+            <div class="icon is-left">
+              <i class="material-icons">local_library</i>
             </div>
           </div>            
           <div class="control">
