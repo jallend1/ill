@@ -3,6 +3,10 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  margin: auto;
+}
+
 .profiles {
   margin: 1em;
 }
