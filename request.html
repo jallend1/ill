@@ -13,9 +13,16 @@
     <nav class="navbar is-dark">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">A Generic Public Library System</a>
+        <!-- TODO: Add JavaScript Functionality to hamburger menu -->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarContent">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
       <div class="navbar-menu">
-        <div class="navbar-end">
+        <div id="navbarContent" class="navbar-end">
+          <a href="index.html" class="navbar-item">Home</a>
           <a href="request.html" class="navbar-item is-active">Submit a Request</a>
           <a href="team.html" class="navbar-item">Meet the Team</a>
           <a href="faq.html" class="navbar-item">FAQ</a>
