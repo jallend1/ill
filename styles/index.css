@@ -1,26 +1,10 @@
-/* Brand color: #353535 */
-
 body {
   background-color: #457b9d;
   min-height: 100vh;
 }
 
 .container {
-  width: 80%;
   background-color: #a8dadc;
-}
-
-header {
-  text-align: center;
-}
-
-header > img {
-  max-height: 300px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 3em;
 }
 
 #main {
