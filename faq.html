@@ -11,14 +11,70 @@
     <title>Frequently Asked Questions - Interlibrary Loan</title>
   </head>
   <body>
+    <nav class="navbar is-light">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html"
+          >A Generic Public Library System</a
+        >
+        <!-- TODO: Add JavaScript Functionality to hamburger menu -->
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarContent"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div id="navbarContent" class="navbar-end">
+          <a href="index.html" class="navbar-item">Home</a>
+          <a href="request.html" class="navbar-item">Submit a Request</a>
+          <a href="team.html" class="navbar-item">Meet the Team</a>
+          <a href="faq.html" class="navbar-item is-active">FAQ</a>
+          <a href="details.html" class="navbar-item">Stats</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
     <header>
-      <h2>A Generic Public Library</h2>
-      <h1>Frequently Asked Questions</h1>
+      <h1 class="title is-1 has-text-centered">Frequently Asked Questions</h1>
+      <h2 class="subtitle has-text-centered">A Generic Public Library</h2>
     </header>
-    <main>
+    <section class="section columns">
+      <div class="card column is-two-fifths">
+        <p class="card-header-title is-centered">I'm a Person</p>
+        <div class="card-image">
+          <figure class="image ">
+            <img src="./images/idea.png" alt="">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content has-text-centered">Click here if you're a GPLS patron who wants to see about borrowing something</div>
+        </div>
+      </div>
+      <div class="column"></div>
+      <div class="card column is-two-fifths">
+        <div class="card-header-title is-centered">
+          I'm a Library
+        </div>
+        <div class="card-image ">
+          <img src="./images/books.png" alt="">
+          <!-- <a href='https://www.freepik.com/vectors/school'>School vector created by macrovector - www.freepik.com</a> -->
+        </div>
+        <div class="card-content">
+          <div class="content has-text-centered">Head here if you're a library system wanting to borrow one of our items </div>
+        </div>
+      </div>
+    </section>
+    <section id="patrons">
+      <h3 class="title is-5 has-text-centered">For GPLS Patrons</h3>
       <ul>
-        <li>
-          <div>
+        <li class="block">
+          <div class="box">
             <h3>What is Interlibrary Loan (ILL)?</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -27,8 +83,8 @@
             </p>
           </div>
         </li>
-        <li>
-          <div>
+        <li class="block">
+          <div class="box">
             <h3>Who can use the ILL service?</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
@@ -37,8 +93,8 @@
             </p>
           </div>
         </li>
-        <li>
-          <div>
+        <li class="block">
+          <div class="box">
             <h3>What type of items can I get through ILL?</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -46,8 +102,8 @@
             </p>
           </div>
         </li>
-        <li>
-          <div>
+        <li class="block">
+          <div class="box">
             <h3>What does it cost?</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
@@ -56,8 +112,8 @@
             </p>
           </div>
         </li>
-        <li>
-          <div>
+        <li class="block">
+          <div class="box">
             <h3>How long does it take?</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
@@ -67,6 +123,7 @@
           </div>
         </li>
       </ul>
-    </main>
+    </section>
+  </div>
   </body>
 </html>
