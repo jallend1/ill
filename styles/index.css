@@ -1,22 +1,29 @@
 body {
-  background-color: #457b9d;
+  /* background-color: #457b9d; */
+  /* background-color: #e5e5e5; */
   min-height: 100vh;
 }
 
-.container {
-  background-color: #a8dadc;
+#head {
+  background-color: #30a0e1;
+  height: 50vh;
+}
+
+header {
+  height: 40vh;
+}
+
+#request {
+  background-color: #ff5e2b;
 }
 
 #main {
-  padding: 1.25em;
-  background-color: #e5e5e5;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  position: relative;
+  top: -100px;
 }
 
-#main > div > a > img {
-  max-height: 200px;
-  border-radius: 50%;
+.card {
+  margin: 2em;
 }

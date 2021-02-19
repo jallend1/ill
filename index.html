@@ -9,12 +9,12 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
     />
     <link rel="stylesheet" href="styles/index.css" />
-    <title>Interlibrary Loan</title>
+    <title>GPLS Interlibrary Loan</title>
   </head>
   <body>
     <nav class="navbar is-light">
       <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">A Generic Public Library System</a>
+        <a class="navbar-item" href="index.html">Generic Public Library System</a>
           <a
           id="burger"
           role="button"
@@ -38,53 +38,67 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <header>
-        <figure class="image">
-          <img src="./images/library.png" alt="An empty library" />
-        </figure>
-        <!-- <a href='https://www.freepik.com/vectors/school'>School vector created by upklyak - www.freepik.com</a> -->
-      </header>
-      <main>
-        <h1 class="title is-1 has-text-centered">Interlibrary Loan</h1>
-        <div id="main">
-          <div>
-            <!-- <a href='https://www.freepik.com/vectors/school'>School vector created by pch.vector - www.freepik.com</a> -->
-            <a href="request.html">
-              <img
-                src="images/bigbookperson.png"
-                alt="Person in dress pointing inside a big book"
-              />
-            </a>
-            <h2>Submit a Request</h2>
+    <div class="section" id="head">
+      <!-- <a href='https://www.freepik.com/vectors/school'>School vector created by upklyak - www.freepik.com</a> -->
+      <!-- TODO: Do I want an image?  -->
+      <header class="columns is-vcentered">
+        <!-- <div class="column is-two-thirds">
+          <figure class="image">
+            <img src="./images/library.png" alt="An empty library" />
+          </figure> -->
+          <!-- </div> -->
+          
+          <div class="column">
+            <h1 class="title is-1 has-text-centered has-text-black">Generic Public Library System</h1>
+            <h2 class="title is-2 has-text-centered has-text-grey-darker">Interlibrary Loan Department</h2>
+            <div class="has-text-centered column">
+              <a href="request.html">
+                <button id="request" class="button is-large has-text-white is-rounded">Submit a Request</button>
+              </a>
+            </div>
           </div>
-          <div>
+      </header>   
+    </div>
+      <main>
+        <div id="main" class="columns">
+          <div class="column card">
             <!-- <a href="https://www.freepik.com/vectors/people">People vector created by syarifahbrit - www.freepik.com</a> -->
+          <div class="card-image">
             <a href="team.html">
               <img src="images/team.png" alt="Team members working together" />
             </a>
-            <h2>Meet the Team</h2>
           </div>
-          <div>
+              <div class="card-header-title">
+                <h2>Meet the Team</h2>
+              </div>
+          </div>
+          <div class="column card">
             <!-- <a href="https://www.freepik.com/vectors/people">People vector created by syarifahbrit - www.freepik.com</a> -->
-            <a href="faq.html">
-              <img src="./images/idea.png" alt="Man with lightbulb" />
-            </a>
-            <h2>Frequently Asked Questions</h2>
+            <div class="card-image">
+              <a href="faq.html">
+                <img src="./images/idea.png" alt="Man with lightbulb" />
+              </a>
+            </div>
+            <div class="card-content">
+              <h2>Frequently Asked Questions</h2>
+            </div>
           </div>
-          <div>
+          <div class="column card">
             <!-- <a href='https://www.freepik.com/vectors/school'>School vector created by pch.vector - www.freepik.com</a> -->
-            <a href="details.html">
-              <img
-                src="images/details.png"
-                alt="Cartoon person with magnifying glass"
-              />
-            </a>
-            <h2>Stats For Our Fellow Nerds</h2>
+            <div class="card-image">
+              <a href="details.html">
+                <img
+                  src="images/details.png"
+                  alt="Cartoon person with magnifying glass"
+                />
+              </a>
+            </div>
+            <div class="card-content">
+              <h2>Stats For Our Fellow Nerds</h2>
+            </div>
           </div>
         </div>
       </main>
-    </div>
     <script src="app.js"></script>
   </body>
 </html>
