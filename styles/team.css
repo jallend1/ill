@@ -16,6 +16,10 @@ h2 {
   font-family: 'Hind Vadodara', sans-serif;
 }
 
+header > div > .subtitle {
+  padding-top: 2em;
+}
+
 .container {
   margin: auto;
 }
