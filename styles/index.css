@@ -1,6 +1,4 @@
 body {
-  /* background-color: #457b9d; */
-  /* background-color: #e5e5e5; */
   min-height: 100vh;
 }
 
@@ -10,22 +8,9 @@ body {
   padding-bottom: 7em;
 }
 
-header {
-  min-height: 40vh;
-}
-
-/* figure > img {
-  max-width: 400px;
-  border-radius: 25%;
-  margin: auto;
-} */
-
 #request {
   background-color: #ff5e2b;
-}
-
-main {
-  position: absolute;
+  margin: 2em 0 4em 0;
 }
 
 #main {
@@ -36,5 +21,5 @@ main {
 }
 
 .card {
-  margin: 2em;
+  min-width: 200px;
 }
