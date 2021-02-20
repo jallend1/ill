@@ -42,27 +42,32 @@
         </div>
       </div>
     </nav>
-    <div class="container columns">
-      <div class="column">
-        <h1 class="title is-1 has-text-centered">
-          Request an Interlibrary Loan
-        </h1>
-        <h2 class="subtitle is-6 has-text-centered">
-          Services provided by A Generic Library System
-        </h2>
-        <figure class="image">
-          <img
-            src="images/robot.png"
-            alt="Robot awarding a kid a prize by some books"
-          />
-        </figure>
-        <!-- <a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a> -->
-      </div>
-      <div class="column">
+    <div id="head">
+      <header>
+        <div>
+          <h1 class="title is-1 has-text-centered has-text-white">
+            Request an Interlibrary Loan
+          </h1>
+          <h2 class="subtitle is-5 has-text-centered">
+            A service provided by GPLS
+          </h2>
+          <!-- <figure class="image">
+            <img 
+              src="images/robot.png"
+              alt="Robot awarding a kid a prize by some books"
+            />
+          </figure> -->
+          <!-- <a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a> -->
+        </div>
+      </header>
+    </div>
+    <main>
+    <div class="columns" id="form-details">
+      <div class="column is-two-fifths">
         <form id="user">
           <div class="box">
             <label class="label is-large">Your Information</label>
-            <div class="field is-horizontal">
+            <div class="field ">
               <div class="field-label"></div>
               <div class="field-body">
                 <div class="field">
@@ -98,7 +103,7 @@
                 </div>
               </div>
             </div>
-            <div class="field is-horizontal">
+            <div class="field">
               <div class="field-label"></div>
               <div class="field-body">
                 <div class="field">
@@ -136,116 +141,117 @@
               </div>
             </div>
           </div>
-          <div class="box">
-            <label class="label is-large">Item Details</label>
-            <div class="field is-horizontal">
-              <div class="field-label is-medium"></div>
-              <div class="field-body">
-                <div class="field">
-                  <label class="label" for="title">Title</label>
-                  <div class="control has-icons-left">
-                    <input
-                      class="input"
-                      type="text"
-                      name="title"
-                      id="title"
-                      placeholder="e.g. Beauty and Sadness"
-                    />
-                    <span class="icon is-left">
-                      <i class="material-icons">book</i>
-                    </span>
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label" for="author">Author(s)</label>
-                  <div class="control has-icons-left">
-                    <input
-                      class="input"
-                      type="text"
-                      name="author"
-                      id="author"
-                      placeholder="e.g. Yasunari Kawabata"
-                    />
-                    <span class="icon is-left">
-                      <i class="material-icons">person</i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <div class="field-label"></div>
-              <div class="field-body">
-                <div class="field">
-                  <label class="label" for="isbn">ISBN</label>
-                  <div class="control has-icons-left">
-                    <input class="input" type="text" name="isbn" id="isbn" />
-                    <span class="icon is-left">
-                      <i class="material-icons">school</i>
-                    </span>
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label" for="year">Year Published</label>
-                  <div class="control has-icons-left">
-                    <input class="input" type="text" name="year" id="year" />
-                    <span class="icon is-left">
-                      <i class="material-icons">copyright</i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <div class="field-label"></div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <textarea
-                      class="textarea is-primary is-medium has-fixed-size"
-                      name="details"
-                      id="details"
-                      cols="20"
-                      rows="5"
-                      placeholder="Please enter any additional details that might help us find your item."
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <div class="field-label"></div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control has-icons-left is-medium">
-                    <div class="select is-rounded is-medium is-centered">
-                      <select name="location" id="location-select">
-                        <option value="">Select pickup location</option>
-                        <option value="loc">Library of Congress</option>
-                        <option value="home">Home Delivery</option>
-                        <option value="amazon">Amazon Locker</option>
-                      </select>
-                    </div>
-                    <div class="icon is-left">
-                      <i class="material-icons">local_library</i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <button
-                class="button is-large is-primary is-fullwidth is-rounded"
-              >
-                Submit Request
-              </button>
-            </div>
-          </div>
         </form>
       </div>
+      <div class="column is-two-fifths">
+        <div class="box">
+          <label class="label is-large">Item Details</label>
+        <div class="field">
+          <div class="field-label is-medium"></div>
+          <div class="field-body">
+            <div class="field">
+              <label class="label" for="title">Title</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="e.g. Beauty and Sadness"
+                />
+                <span class="icon is-left">
+                  <i class="material-icons">book</i>
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label" for="author">Author(s)</label>
+              <div class="control has-icons-left">
+                <input
+                  class="input"
+                  type="text"
+                  name="author"
+                  id="author"
+                  placeholder="e.g. Yasunari Kawabata"
+                />
+                <span class="icon is-left">
+                  <i class="material-icons">person</i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+        <div class="field">
+          <div class="field-label"></div>
+          <div class="field-body">
+            <div class="field">
+              <label class="label" for="isbn">ISBN</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" name="isbn" id="isbn" />
+                <span class="icon is-left">
+                  <i class="material-icons">school</i>
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label" for="year">Year Published</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" name="year" id="year" />
+                <span class="icon is-left">
+                  <i class="material-icons">copyright</i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-label"></div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <textarea
+                  class="textarea is-primary is-medium has-fixed-size"
+                  name="details"
+                  id="details"
+                  cols="20"
+                  rows="5"
+                  placeholder="Please enter any additional details that might help us find your item."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-label"></div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control has-icons-left is-medium">
+                <div class="select is-rounded is-medium is-centered">
+                  <select name="location" id="location-select">
+                    <option value="">Select pickup location</option>
+                    <option value="loc">Library of Congress</option>
+                    <option value="home">Home Delivery</option>
+                    <option value="amazon">Amazon Locker</option>
+                  </select>
+                </div>
+                <div class="icon is-left">
+                  <i class="material-icons">local_library</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>      
     </div>
+    <div class="field">
+      <div class="control">
+        <button id="submit" class="button is-large is-primary is-fullwidth is-rounded">Submit Request</button>
+      </div>
+    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>

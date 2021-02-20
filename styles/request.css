@@ -1,0 +1,29 @@
+#head {
+  background-color: #30a0e1;
+  margin: auto;
+  height: 40vh;
+}
+
+header {
+  max-width: 50%;
+  margin: auto;
+}
+
+/* figure > img {
+  max-width: 300px;
+  margin: auto;
+} */
+
+main {
+  max-width: 80%;
+  margin: auto;
+}
+
+#form-details {
+  position: relative;
+  top: -150px;
+}
+
+#submit {
+  background-color: #ff5e2b;
+}
