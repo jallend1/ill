@@ -58,175 +58,172 @@
     </header>
     <main class="container">
       <form>
-        <div class="columns" >
+        <div class="columns">
           <div class="column is-vcentered">
-              <div class="box">
-                <label class="label is-large has-text-centered">
-                  <span class="highlight title is-3">Your</span> Details
-                </label>
-                    <div class="field">
-                      <label for="barcode" class="label">Library Barcode</label>
-                      <div class="control has-icons-left">
-                        <input
-                          class="input"
-                          type="text"
-                          name="barcode"
-                          id="barcode"
-                          placeholder="Barcode"
-                        />
-                        <span class="icon is-left">
-                          <i class="material-icons"> credit_card </i>
-                        </span>
-                      </div>
-                      <p class="help is-danger">Required</p>
-                    </div>
-                    <div class="field">
-                      <label for="name" class="label">Name</label>
-                      <div class="control has-icons-left">
-                        <input
-                          class="input"
-                          type="text"
-                          name="name"
-                          id="name"
-                          placeholder="Your name"
-                        />
-                        <span class="icon is-left">
-                          <i class="material-icons">person</i>
-                        </span>
-                      </div>
-                      <p class="help is-danger">Required</p>
-                    </div>
-                <div class="field">
-                      <label class="label" for="phone">Phone Number</label>
-                      <div class="control has-icons-left">
-                        <input
-                          class="input"
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                          placeholder="555-555-5555"
-                        />
-                        <span class="icon is-left">
-                          <i class="material-icons">phone</i>
-                        </span>
-                      </div>
-                      <p class="help">Format: 123-456-7890</p>
-                    </div>
-                    <div class="field">
-                      <label class="label" for="email">Email</label>
-                      <div class="control has-icons-left">
-                        <input
-                          class="input"
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="me@example.com"
-                        />
-                        <span class="icon is-left">
-                          <i class="material-icons">email</i>
-                        </span>
-                      </div>
-                    </div>
-              </div>   
+            <div class="box">
+              <label class="label is-large has-text-centered">
+                <span class="highlight title is-3">Your</span> Details
+              </label>
+              <div class="field">
+                <label for="barcode" class="label">Library Barcode</label>
+                <div class="control has-icons-left">
+                  <input
+                    class="input"
+                    type="text"
+                    name="barcode"
+                    id="barcode"
+                    placeholder="Barcode"
+                  />
+                  <span class="icon is-left">
+                    <i class="material-icons"> credit_card </i>
+                  </span>
+                </div>
+                <p class="help is-danger">Required</p>
+              </div>
+              <div class="field">
+                <label for="name" class="label">Name</label>
+                <div class="control has-icons-left">
+                  <input
+                    class="input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your name"
+                  />
+                  <span class="icon is-left">
+                    <i class="material-icons">person</i>
+                  </span>
+                </div>
+                <p class="help is-danger">Required</p>
+              </div>
+              <div class="field">
+                <label class="label" for="phone">Phone Number</label>
+                <div class="control has-icons-left">
+                  <input
+                    class="input"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="555-555-5555"
+                  />
+                  <span class="icon is-left">
+                    <i class="material-icons">phone</i>
+                  </span>
+                </div>
+                <p class="help">Format: 123-456-7890</p>
+              </div>
+              <div class="field">
+                <label class="label" for="email">Email</label>
+                <div class="control has-icons-left">
+                  <input
+                    class="input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="me@example.com"
+                  />
+                  <span class="icon is-left">
+                    <i class="material-icons">email</i>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="column is-one-fifth"></div>          
+          <div class="column is-one-fifth"></div>
           <div class="column">
             <div class="box">
               <label class="label is-large has-text-centered">
                 <span class="highlight title is-3">Item</span> Details
               </label>
+              <div class="field">
+                <label class="label" for="title">Title</label>
+                <div class="control has-icons-left">
+                  <input
+                    class="input"
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="e.g. Beauty and Sadness"
+                  />
+                  <span class="icon is-left">
+                    <i class="material-icons">book</i>
+                  </span>
+                </div>
+                <p class="help is-danger">Required</p>
+              </div>
+              <div class="field">
+                <label class="label" for="author">Author(s)</label>
+                <div class="control has-icons-left">
+                  <input
+                    class="input"
+                    type="text"
+                    name="author"
+                    id="author"
+                    placeholder="e.g. Yasunari Kawabata"
+                  />
+                  <span class="icon is-left">
+                    <i class="material-icons">person</i>
+                  </span>
+                </div>
+                <p class="help is-danger">Required</p>
+              </div>
+              <div class="field">
+                <div class="field-body">
                   <div class="field">
-                    <label class="label" for="title">Title</label>
+                    <label class="label" for="isbn">ISBN</label>
                     <div class="control has-icons-left">
-                      <input
-                        class="input"
-                        type="text"
-                        name="title"
-                        id="title"
-                        placeholder="e.g. Beauty and Sadness"
-                      />
+                      <input class="input" type="text" name="isbn" id="isbn" />
                       <span class="icon is-left">
-                        <i class="material-icons">book</i>
+                        <i class="material-icons">school</i>
                       </span>
                     </div>
-                    <p class="help is-danger">Required</p>
                   </div>
                   <div class="field">
-                    <label class="label" for="author">Author(s)</label>
+                    <label class="label" for="year">Year Published</label>
                     <div class="control has-icons-left">
-                      <input
-                        class="input"
-                        type="text"
-                        name="author"
-                        id="author"
-                        placeholder="e.g. Yasunari Kawabata"
-                      />
+                      <input class="input" type="text" name="year" id="year" />
                       <span class="icon is-left">
-                        <i class="material-icons">person</i>
+                        <i class="material-icons">copyright</i>
                       </span>
-                    </div>
-                    <p class="help is-danger">Required</p>
-                  </div>
-                <div class="field">
-                  <div class="field-body">
-                    <div class="field">
-                      <label class="label" for="isbn">ISBN</label>
-                      <div class="control has-icons-left">
-                        <input class="input" type="text" name="isbn" id="isbn" />
-                        <span class="icon is-left">
-                          <i class="material-icons">school</i>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="field">
-                      <label class="label" for="year">Year Published</label>
-                      <div class="control has-icons-left">
-                        <input class="input" type="text" name="year" id="year" />
-                        <span class="icon is-left">
-                          <i class="material-icons">copyright</i>
-                        </span>
-                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="field">
-                  <div class="control">
-                    <textarea
-                      class="textarea is-primary is-medium has-fixed-size"
-                      name="details"
-                      id="details"
-                      cols="20"
-                      rows="5"
-                      placeholder="Please enter any additional details that might help us find your item."
-                    ></textarea>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <textarea
+                    class="textarea is-primary is-medium has-fixed-size"
+                    name="details"
+                    id="details"
+                    cols="20"
+                    rows="5"
+                    placeholder="Please enter any additional details that might help us find your item."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control has-icons-left is-medium">
+                  <div class="select is-rounded is-medium">
+                    <select name="location" id="location-select">
+                      <option value="">Select pickup location</option>
+                      <option value="loc">Library of Congress</option>
+                      <option value="home">Home Delivery</option>
+                      <option value="amazon">Amazon Locker</option>
+                    </select>
                   </div>
-                </div>              
-                <div class="field">
-                  <div class="control has-icons-left is-medium">
-                    <div class="select is-rounded is-medium">
-                      <select name="location" id="location-select">
-                        <option value="">Select pickup location</option>
-                        <option value="loc">Library of Congress</option>
-                        <option value="home">Home Delivery</option>
-                        <option value="amazon">Amazon Locker</option>
-                      </select>
-                    </div>
-                    <div class="icon is-left">
-                      <i class="material-icons">local_library</i>
-                    </div>
+                  <div class="icon is-left">
+                    <i class="material-icons">local_library</i>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="field submit">
           <div class="control has-text-centered">
-            <button
-            id="submit"
-            class="button is-large is-primary is-rounded"
-            >
-            Submit Request
+            <button id="submit" class="button is-large is-primary is-rounded">
+              Submit Request
             </button>
           </div>
         </div>

@@ -1,9 +1,9 @@
-const burger = document.getElementById('burger');
+const burger = document.getElementById("burger");
 
 const showMenu = () => {
-    const $menu = document.getElementById('navbarContent')
-    burger.classList.toggle('is-active');
-    $menu.classList.toggle('is-active');
-}
+  const $menu = document.getElementById("navbarContent");
+  burger.classList.toggle("is-active");
+  $menu.classList.toggle("is-active");
+};
 
-burger.addEventListener('click', showMenu);
+burger.addEventListener("click", showMenu);
