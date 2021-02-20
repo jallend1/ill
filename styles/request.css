@@ -1,11 +1,19 @@
+body {
+  height: 100vh;
+}
+
 header {
   background-color: #30a0e1;
-  height: 40vh;
+  height: 50%;
   margin: auto;
 }
 
 .headings {
-  padding-top: 5em;
+  padding-top: 7em;
+}
+
+main {
+  max-height: 40vh;
 }
 
 .highlight {
@@ -14,17 +22,9 @@ header {
 
 form {
   position: relative;
-  top: -150px;
+  top: -250px;
 }
 
 #submit {
   background-color: #ff5e2b;
-}
-
-.submit {
-  width: 100%;
-}
-
-button {
-  margin: auto;
 }
