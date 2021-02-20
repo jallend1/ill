@@ -1,6 +1,10 @@
 body {
-  background-color: #457b9d;
+  background-color: white;
   min-height: 100vh;
+}
+
+header {
+  background-color: #30a0e1;
 }
 
 .container {
@@ -9,4 +13,16 @@ body {
 
 .profiles {
   margin: 1em;
+}
+
+#jason,
+#bea,
+#kay,
+#vee,
+#team {
+  background-color: #ff5e2b;
+}
+
+#team {
+  margin: 2em;
 }
