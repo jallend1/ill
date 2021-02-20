@@ -1,29 +1,30 @@
-#head {
-  background-color: #30a0e1;
-  margin: auto;
-  height: 40vh;
-}
-
 header {
-  max-width: 50%;
+  background-color: #30a0e1;
+  height: 40vh;
   margin: auto;
 }
 
-/* figure > img {
-  max-width: 300px;
-  margin: auto;
-} */
-
-main {
-  max-width: 80%;
-  margin: auto;
+.headings {
+  padding-top: 5em;
 }
 
-#form-details {
+.highlight {
+  color: #ff5e2b;
+}
+
+form {
   position: relative;
   top: -150px;
 }
 
 #submit {
   background-color: #ff5e2b;
+}
+
+.submit {
+  width: 100%;
+}
+
+button {
+  margin: auto;
 }
