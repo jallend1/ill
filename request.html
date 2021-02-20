@@ -55,13 +55,6 @@
           <h2 class="subtitle is-5 has-text-centered">
             A service provided by GPLS
           </h2>
-          <!-- <figure class="image">
-            <img 
-              src="images/robot.png"
-              alt="Robot awarding a kid a prize by some books"
-            />
-          </figure> -->
-          <!-- <a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a> -->
         </div>
       </header>
     </div>
@@ -71,9 +64,6 @@
           <form id="user">
             <div class="box">
               <label class="label is-large">Your Information</label>
-              <div class="field">
-                <div class="field-label"></div>
-                <div class="field-body">
                   <div class="field">
                     <label for="barcode" class="label">Library Barcode</label>
                     <div class="control has-icons-left">
@@ -105,12 +95,7 @@
                       </span>
                     </div>
                   </div>
-                </div>
-              </div>
               <div class="field">
-                <div class="field-label"></div>
-                <div class="field-body">
-                  <div class="field">
                     <label class="label" for="phone">Phone Number</label>
                     <div class="control has-icons-left">
                       <input
@@ -142,17 +127,12 @@
                       </span>
                     </div>
                   </div>
-                </div>
-              </div>
             </div>
           </form>
         </div>
         <div class="column is-two-fifths">
           <div class="box">
             <label class="label is-large">Item Details</label>
-            <div class="field">
-              <div class="field-label is-medium"></div>
-              <div class="field-body">
                 <div class="field">
                   <label class="label" for="title">Title</label>
                   <div class="control has-icons-left">
@@ -183,11 +163,7 @@
                     </span>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="column">
               <div class="field">
-                <div class="field-label"></div>
                 <div class="field-body">
                   <div class="field">
                     <label class="label" for="isbn">ISBN</label>
@@ -210,43 +186,32 @@
                 </div>
               </div>
               <div class="field">
-                <div class="field-label"></div>
-                <div class="field-body">
-                  <div class="field">
-                    <div class="control">
-                      <textarea
-                        class="textarea is-primary is-medium has-fixed-size"
-                        name="details"
-                        id="details"
-                        cols="20"
-                        rows="5"
-                        placeholder="Please enter any additional details that might help us find your item."
-                      ></textarea>
-                    </div>
-                  </div>
+                <div class="control">
+                  <textarea
+                    class="textarea is-primary is-medium has-fixed-size"
+                    name="details"
+                    id="details"
+                    cols="20"
+                    rows="5"
+                    placeholder="Please enter any additional details that might help us find your item."
+                  ></textarea>
                 </div>
-              </div>
+              </div>              
               <div class="field">
-                <div class="field-label"></div>
-                <div class="field-body">
-                  <div class="field">
-                    <div class="control has-icons-left is-medium">
-                      <div class="select is-rounded is-medium is-centered">
-                        <select name="location" id="location-select">
-                          <option value="">Select pickup location</option>
-                          <option value="loc">Library of Congress</option>
-                          <option value="home">Home Delivery</option>
-                          <option value="amazon">Amazon Locker</option>
-                        </select>
-                      </div>
-                      <div class="icon is-left">
-                        <i class="material-icons">local_library</i>
-                      </div>
-                    </div>
+                <div class="control has-icons-left is-medium">
+                  <div class="select is-rounded is-medium">
+                    <select name="location" id="location-select">
+                      <option value="">Select pickup location</option>
+                      <option value="loc">Library of Congress</option>
+                      <option value="home">Home Delivery</option>
+                      <option value="amazon">Amazon Locker</option>
+                    </select>
+                  </div>
+                  <div class="icon is-left">
+                    <i class="material-icons">local_library</i>
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
