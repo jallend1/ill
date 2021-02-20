@@ -6,22 +6,33 @@ body {
 
 #head {
   background-color: #30a0e1;
-  height: 50vh;
+  min-height: 50vh;
+  padding-bottom: 7em;
 }
 
 header {
-  height: 40vh;
+  min-height: 40vh;
 }
+
+/* figure > img {
+  max-width: 400px;
+  border-radius: 25%;
+  margin: auto;
+} */
 
 #request {
   background-color: #ff5e2b;
+}
+
+main {
+  position: absolute;
 }
 
 #main {
   max-width: 50%;
   margin: auto;
   position: relative;
-  top: -100px;
+  top: -150px;
 }
 
 .card {
