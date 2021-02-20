@@ -18,24 +18,28 @@
   <body>
     <nav class="navbar is-light">
       <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">A Generic Public Library System</a>
-          <a
+        <a class="navbar-item" href="index.html"
+          >A Generic Public Library System</a
+        >
+        <a
           id="burger"
           role="button"
           class="navbar-burger"
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarContent"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
       <div class="navbar-menu" id="navbarContent">
         <div class="navbar-end">
           <a href="index.html" class="navbar-item">Home</a>
-          <a href="request.html" class="navbar-item is-active">Submit a Request</a>
+          <a href="request.html" class="navbar-item is-active"
+            >Submit a Request</a
+          >
           <a href="team.html" class="navbar-item">Meet the Team</a>
           <a href="faq.html" class="navbar-item">FAQ</a>
           <a href="details.html" class="navbar-item">Stats</a>
@@ -62,39 +66,117 @@
       </header>
     </div>
     <main>
-    <div class="columns" id="form-details">
-      <div class="column is-two-fifths">
-        <form id="user">
+      <div class="columns" id="form-details">
+        <div class="column is-two-fifths">
+          <form id="user">
+            <div class="box">
+              <label class="label is-large">Your Information</label>
+              <div class="field">
+                <div class="field-label"></div>
+                <div class="field-body">
+                  <div class="field">
+                    <label for="barcode" class="label">Library Barcode</label>
+                    <div class="control has-icons-left">
+                      <input
+                        class="input"
+                        type="text"
+                        name="barcode"
+                        id="barcode"
+                        placeholder="Barcode"
+                      />
+                      <span class="icon is-left">
+                        <i class="material-icons"> credit_card </i>
+                      </span>
+                    </div>
+                    <p class="help">Located on the back of your library card</p>
+                  </div>
+                  <div class="field">
+                    <label for="name" class="label">Name</label>
+                    <div class="control has-icons-left">
+                      <input
+                        class="input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Your name"
+                      />
+                      <span class="icon is-left">
+                        <i class="material-icons">person</i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field-label"></div>
+                <div class="field-body">
+                  <div class="field">
+                    <label class="label" for="phone">Phone Number</label>
+                    <div class="control has-icons-left">
+                      <input
+                        class="input"
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="555-555-5555"
+                      />
+                      <span class="icon is-left">
+                        <i class="material-icons">phone</i>
+                      </span>
+                    </div>
+                    <p class="help">Format: 123-456-7890</p>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="email">Email</label>
+                    <div class="control has-icons-left">
+                      <input
+                        class="input"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="me@example.com"
+                      />
+                      <span class="icon is-left">
+                        <i class="material-icons">email</i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="column is-two-fifths">
           <div class="box">
-            <label class="label is-large">Your Information</label>
-            <div class="field ">
-              <div class="field-label"></div>
+            <label class="label is-large">Item Details</label>
+            <div class="field">
+              <div class="field-label is-medium"></div>
               <div class="field-body">
                 <div class="field">
-                  <label for="barcode" class="label">Library Barcode</label>
+                  <label class="label" for="title">Title</label>
                   <div class="control has-icons-left">
                     <input
                       class="input"
                       type="text"
-                      name="barcode"
-                      id="barcode"
-                      placeholder="Barcode"
+                      name="title"
+                      id="title"
+                      placeholder="e.g. Beauty and Sadness"
                     />
                     <span class="icon is-left">
-                      <i class="material-icons"> credit_card </i>
+                      <i class="material-icons">book</i>
                     </span>
                   </div>
-                  <p class="help">Located on the back of your library card</p>
                 </div>
                 <div class="field">
-                  <label for="name" class="label">Name</label>
+                  <label class="label" for="author">Author(s)</label>
                   <div class="control has-icons-left">
                     <input
                       class="input"
                       type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Your name"
+                      name="author"
+                      id="author"
+                      placeholder="e.g. Yasunari Kawabata"
                     />
                     <span class="icon is-left">
                       <i class="material-icons">person</i>
@@ -103,154 +185,81 @@
                 </div>
               </div>
             </div>
-            <div class="field">
-              <div class="field-label"></div>
-              <div class="field-body">
-                <div class="field">
-                  <label class="label" for="phone">Phone Number</label>
-                  <div class="control has-icons-left">
-                    <input
-                      class="input"
-                      type="tel"
-                      name="phone"
-                      id="phone"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                      placeholder="555-555-5555"
-                    />
-                    <span class="icon is-left">
-                      <i class="material-icons">phone</i>
-                    </span>
+            <div class="column">
+              <div class="field">
+                <div class="field-label"></div>
+                <div class="field-body">
+                  <div class="field">
+                    <label class="label" for="isbn">ISBN</label>
+                    <div class="control has-icons-left">
+                      <input class="input" type="text" name="isbn" id="isbn" />
+                      <span class="icon is-left">
+                        <i class="material-icons">school</i>
+                      </span>
+                    </div>
                   </div>
-                  <p class="help">Format: 123-456-7890</p>
-                </div>
-                <div class="field">
-                  <label class="label" for="email">Email</label>
-                  <div class="control has-icons-left">
-                    <input
-                      class="input"
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="me@example.com"
-                    />
-                    <span class="icon is-left">
-                      <i class="material-icons">email</i>
-                    </span>
+                  <div class="field">
+                    <label class="label" for="year">Year Published</label>
+                    <div class="control has-icons-left">
+                      <input class="input" type="text" name="year" id="year" />
+                      <span class="icon is-left">
+                        <i class="material-icons">copyright</i>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="column is-two-fifths">
-        <div class="box">
-          <label class="label is-large">Item Details</label>
-        <div class="field">
-          <div class="field-label is-medium"></div>
-          <div class="field-body">
-            <div class="field">
-              <label class="label" for="title">Title</label>
-              <div class="control has-icons-left">
-                <input
-                  class="input"
-                  type="text"
-                  name="title"
-                  id="title"
-                  placeholder="e.g. Beauty and Sadness"
-                />
-                <span class="icon is-left">
-                  <i class="material-icons">book</i>
-                </span>
-              </div>
-            </div>
-            <div class="field">
-              <label class="label" for="author">Author(s)</label>
-              <div class="control has-icons-left">
-                <input
-                  class="input"
-                  type="text"
-                  name="author"
-                  id="author"
-                  placeholder="e.g. Yasunari Kawabata"
-                />
-                <span class="icon is-left">
-                  <i class="material-icons">person</i>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-        <div class="field">
-          <div class="field-label"></div>
-          <div class="field-body">
-            <div class="field">
-              <label class="label" for="isbn">ISBN</label>
-              <div class="control has-icons-left">
-                <input class="input" type="text" name="isbn" id="isbn" />
-                <span class="icon is-left">
-                  <i class="material-icons">school</i>
-                </span>
-              </div>
-            </div>
-            <div class="field">
-              <label class="label" for="year">Year Published</label>
-              <div class="control has-icons-left">
-                <input class="input" type="text" name="year" id="year" />
-                <span class="icon is-left">
-                  <i class="material-icons">copyright</i>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="field">
-          <div class="field-label"></div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control">
-                <textarea
-                  class="textarea is-primary is-medium has-fixed-size"
-                  name="details"
-                  id="details"
-                  cols="20"
-                  rows="5"
-                  placeholder="Please enter any additional details that might help us find your item."
-                ></textarea>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="field">
-          <div class="field-label"></div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control has-icons-left is-medium">
-                <div class="select is-rounded is-medium is-centered">
-                  <select name="location" id="location-select">
-                    <option value="">Select pickup location</option>
-                    <option value="loc">Library of Congress</option>
-                    <option value="home">Home Delivery</option>
-                    <option value="amazon">Amazon Locker</option>
-                  </select>
+              <div class="field">
+                <div class="field-label"></div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <textarea
+                        class="textarea is-primary is-medium has-fixed-size"
+                        name="details"
+                        id="details"
+                        cols="20"
+                        rows="5"
+                        placeholder="Please enter any additional details that might help us find your item."
+                      ></textarea>
+                    </div>
+                  </div>
                 </div>
-                <div class="icon is-left">
-                  <i class="material-icons">local_library</i>
+              </div>
+              <div class="field">
+                <div class="field-label"></div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control has-icons-left is-medium">
+                      <div class="select is-rounded is-medium is-centered">
+                        <select name="location" id="location-select">
+                          <option value="">Select pickup location</option>
+                          <option value="loc">Library of Congress</option>
+                          <option value="home">Home Delivery</option>
+                          <option value="amazon">Amazon Locker</option>
+                        </select>
+                      </div>
+                      <div class="icon is-left">
+                        <i class="material-icons">local_library</i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="field">
+        <div class="control">
+          <button
+            id="submit"
+            class="button is-large is-primary is-fullwidth is-rounded"
+          >
+            Submit Request
+          </button>
         </div>
-      </div>      
-    </div>
-    <div class="field">
-      <div class="control">
-        <button id="submit" class="button is-large is-primary is-fullwidth is-rounded">Submit Request</button>
       </div>
-    </div>
     </main>
     <script src="app.js"></script>
   </body>
