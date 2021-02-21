@@ -25,7 +25,7 @@ header > div > .subtitle {
 }
 
 .profiles {
-  margin: 1em;
+  margin: 0 1em 1em 0;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
@@ -43,8 +43,4 @@ header > div > .subtitle {
 #team {
   background-color: #ff5e2b;
   font-family: 'Hind Vadodara', sans-serif;
-}
-
-#team {
-  margin: 2em;
 }
