@@ -133,6 +133,21 @@
                   </span>
                 </div>
               </div>
+              <div class="field">
+                <div class="control has-icons-left is-medium">
+                  <div class="select is-rounded is-medium">
+                    <select name="location" id="location-select">
+                      <option value="">Select pickup location</option>
+                      <option value="loc">Library of Congress</option>
+                      <option value="home">Home Delivery</option>
+                      <option value="amazon">Amazon Locker</option>
+                    </select>
+                  </div>
+                  <div class="icon is-left">
+                    <i class="material-icons">local_library</i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="column is-one-fifth"></div>
@@ -202,34 +217,19 @@
                     name="details"
                     id="details"
                     cols="20"
-                    rows="5"
+                    rows="3"
                     placeholder="Please enter any additional details that might help us find your item."
                   ></textarea>
                 </div>
               </div>
-              <div class="field">
-                <div class="control has-icons-left is-medium">
-                  <div class="select is-rounded is-medium">
-                    <select name="location" id="location-select">
-                      <option value="">Select pickup location</option>
-                      <option value="loc">Library of Congress</option>
-                      <option value="home">Home Delivery</option>
-                      <option value="amazon">Amazon Locker</option>
-                    </select>
-                  </div>
-                  <div class="icon is-left">
-                    <i class="material-icons">local_library</i>
-                  </div>
+              <div class="field submit">
+                <div class="control has-text-centered">
+                  <button id="submit" class="button is-large is-primary is-rounded">
+                    Submit Request
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="field submit">
-          <div class="control has-text-centered">
-            <button id="submit" class="button is-large is-primary is-rounded">
-              Submit Request
-            </button>
           </div>
         </div>
       </form>
