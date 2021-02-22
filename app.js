@@ -1,16 +1,21 @@
 const burger = document.getElementById("burger");
-const $buttons = document.getElementsByClassName('faq-button') || null;
+const $faqButtons = document.getElementsByClassName('faq-button') || null;
 
 const showFAQ = e => {
-  const $patronButton = document.getElementById('patrons');
-  const $librariesButton = document.getElementById('libraries')
+  const $patronFAQs = document.getElementById('patrons');
+  const $patronButton = document.getElementById('patron-faq');
+  const $libraryFAQs = document.getElementById('libraries')
+  const $libraryButton = document.getElementById('library-faq');
   if(e.target.id === 'patron-faq'){
-    $patronButton.classList.toggle('is-hidden');
-    $librariesButton.classList.add('is-hidden');
+    $patronFAQs.classList.toggle('is-hidden');
+    $patronFAQs.classList.contains('is-hidden') ? $patronButton.innerText = "Show me patron FAQs" : $patronButton.innerText = "Hide patron FAQs";
+    $libraryFAQs.classList.add('is-hidden');
+    $libraryButton.innerText = "Show me library FAQs";
   }
   else if(e.target.id === 'library-faq'){
-    $librariesButton.classList.toggle('is-hidden');
-    $patronButton.classList.add('is-hidden');
+    $libraryFAQs.classList.toggle('is-hidden');
+    $patronFAQs.classList.add('is-hidden');
+    $libraryFAQs.classList.contains('is-hidden') ? $libraryButton.innerText = "Show me library FAQs" : $libraryButton.innerText = "Hide library FAQs";
   }
 }
 
@@ -22,10 +27,8 @@ const showMenu = () => {
 
 burger.addEventListener("click", showMenu);
 
-if ($buttons){
-  for(button of $buttons){
+if ($faqButtons){
+  for(button of $faqButtons){
     button.addEventListener('click', showFAQ);
   }
 }
-
-console.log($buttons);
