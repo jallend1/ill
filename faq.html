@@ -8,6 +8,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&family=Hind+Vadodara:wght@300&family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/faq.css">
     <title>Frequently Asked Questions - Interlibrary Loan</title>
   </head>
   <body>
@@ -39,13 +45,13 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <header>
-        <h1 class="title is-1 has-text-centered">Frequently Asked Questions</h1>
-        <h2 class="subtitle has-text-centered">A Generic Public Library</h2>
+    <div class="columns">
+      <header class="column is-one-fifth">
+        <h1 class="title is-1 has-text-centered has-text-white">Frequently Asked Questions</h1>
+        <h2 class="subtitle has-text-centered has-text-white">A Generic Public Library</h2>
       </header>
-      <section class="section columns">
-        <div class="card column is-two-fifths">
+      <section class="section column is-one-fifth categories">
+        <div class="card">
           <p class="card-header-title is-centered">I'm a Person</p>
           <div class="card-image">
             <figure class="image">
@@ -60,7 +66,7 @@
           </div>
         </div>
         <div class="column"></div>
-        <div class="card column is-two-fifths">
+        <div class="card">
           <div class="card-header-title is-centered">I'm a Library</div>
           <div class="card-image">
             <img src="./images/books.png" alt="" />
@@ -74,7 +80,8 @@
           </div>
         </div>
       </section>
-      <section id="patrons box">
+      <div class="faqs">
+      <section class="box" id="patrons">
         <h3 class="title is-5 has-text-centered">For GPLS Patrons</h3>
         <ul>
           <li class="block">
@@ -191,6 +198,7 @@
           </li>
         </ul>
       </section>
+    </div>
     </div>
     <script src="app.js"></script>
   </body>

@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+header {
+  background-color: #30a0e1;
+}
+
+h1 {
+  font-family: 'Exo', sans-serif;
+}
+
+h2 {
+  font-family: 'Hind Vadodara', sans-serif;
+}
+
+.card {
+  max-width: 300px;
+  margin: auto;
+}
