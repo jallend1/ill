@@ -50,7 +50,7 @@
         <h1 class="title is-1 has-text-centered has-text-white">Frequently Asked Questions</h1>
         <h2 class="subtitle has-text-centered has-text-white">A Generic Public Library</h2>
       </header>
-      <section class="section column is-one-fifth categories">
+      <section class="section column is-one-fifth" id="categories">
         <div class="card">
           <p class="card-header-title is-centered">I'm a Person</p>
           <div class="card-image">
@@ -60,9 +60,9 @@
           </div>
           <div class="card-content">
             <div class="content has-text-centered">
-              Click here if you're a GPLS patron who wants to see about
-              borrowing something
+              If you are a GPLS patron who wants to borrow something:
             </div>
+            <button class="button faq-button" id="patron-faq">Show me patron FAQs</button>
           </div>
         </div>
         <div class="column"></div>
@@ -77,11 +77,12 @@
               Head here if you're a library system wanting to borrow one of our
               items
             </div>
+            <button class="button faq-button" id="library-faq">Show me library FAQs</button>
           </div>
         </div>
       </section>
-      <div class="faqs">
-      <section class="box" id="patrons">
+      <div class="" id="faqs">
+      <section class="is-hidden box" id="patrons">
         <h3 class="title is-5 has-text-centered">For GPLS Patrons</h3>
         <ul>
           <li class="block">
@@ -135,7 +136,7 @@
           </li>
         </ul>
       </section>
-      <section id="libraries" class="box">
+      <section id="libraries" class="box is-hidden">
         <h3 class="title is-5 has-text-centered">For Other Library Systems</h3>
         <ul>
           <li class="block">

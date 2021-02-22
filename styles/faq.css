@@ -19,3 +19,16 @@ h2 {
   max-width: 300px;
   margin: auto;
 }
+
+.is-clicked {
+  background-color: #ff5e2b;
+}
+
+.is-hidden {
+  display: none;
+}
+
+#library-faq,
+#patron-faq {
+  background-color: #ff5e2b;
+}
