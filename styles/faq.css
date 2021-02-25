@@ -26,7 +26,8 @@ h2 {
 }
 
 .is-clicked {
-  background-color: #ff5e2b;
+  background-color: #30a0e1;
+  color: black;
 }
 
 .is-hidden {
