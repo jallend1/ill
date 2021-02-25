@@ -2,35 +2,37 @@ const burger = document.getElementById("burger");
 const $faqButtons = document.getElementsByClassName("faq-button") || null;
 
 const showFAQ = (e) => {
-  // Gets the containing div from the id attribute of the button and applies active styling
-  const targetElement = e.target.id.split('-')[0];
-  const $highlightedDiv = document.getElementById(targetElement);
-  $highlightedDiv.classList.toggle('is-clicked');
-
-  const $patronFAQs = document.getElementById("patrons");
-  const $patronButton = document.getElementById("patron-faq");
-
-  const $libraryFAQs = document.getElementById("libraries");
-  const $libraryButton = document.getElementById("library-faq");
-  // If the patron button is hit...
-  if (e.target.id === "patron-faq") {
-    $patronFAQs.classList.toggle("is-hidden");
-    // Changes text of button based on whether it is currently active
-    $patronFAQs.classList.contains("is-hidden")
-      ? ($patronButton.innerText = "Show me patron FAQs")
-      : ($patronButton.innerText = "Hide patron FAQs");
-    $libraryFAQs.classList.add("is-hidden");
-    $libraryButton.innerText = "Show me library FAQs";
-  // Or if the library button is hit...
-  
-  } else if (e.target.id === "library-faq") {
-    $libraryFAQs.classList.toggle("is-hidden");
-    $patronFAQs.classList.add("is-hidden");
-    $libraryFAQs.classList.contains("is-hidden")
-      ? ($libraryButton.innerText = "Show me library FAQs")
-      : ($libraryButton.innerText = "Hide library FAQs");
+  for(let i = 0; i < $faqButtons.length; i++){
+    // If the button clicked matches the one in the HTML collection
+    if($faqButtons[i].id === e.target.id){
+      // Change the text to reflect its current state
+      $faqButtons[i].innerText.includes('Show') ? 
+        $faqButtons[i].innerText = "Hide" + $faqButtons[i].innerText.slice(4) 
+        : $faqButtons[i].innerText = "Show" + $faqButtons[i].innerText.slice(4); 
+      // Show or Hide the div containing the corresponding information
+      const FAQs = document.getElementById($faqButtons[i].dataset.target);
+      FAQs.classList.toggle('is-hidden');
+      // Extracts id of parent card div and toggles active styling
+      const $targetDiv = document.getElementById($faqButtons[i].id.split('-')[0]);
+      $targetDiv.classList.toggle('is-clicked');
+    }
+    // If it doesn't match
+    else{
+      // Reset its text to initial value
+      $faqButtons[i].innerText = "Show" + $faqButtons[i].innerText.slice(4) 
+      // Makes sure the corresponding FAQ is not displayed
+      const FAQs = document.getElementById($faqButtons[i].dataset.target);
+      FAQs.classList.add('is-hidden');
+      // Extracts id of parent card div and removes any active styling
+      const $targetDiv = document.getElementById($faqButtons[i].id.split('-')[0]);
+      $targetDiv.classList.remove('is-clicked');
+    }
   }
 };
+
+const resetFAQs = () => {
+
+}
 
 const showMenu = () => {
   const $menu = document.getElementById("navbarContent");
