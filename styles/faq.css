@@ -5,6 +5,7 @@ body {
 
 header {
   background-color: #30a0e1;
+  height: 96.3vh;
 }
 
 .headings {
@@ -20,6 +21,10 @@ h2 {
   font-family: 'Hind Vadodara', sans-serif;
 }
 
+#categories {
+  max-height: 50vh;
+}
+
 .is-clicked {
   background-color: #ff5e2b;
 }
@@ -31,4 +36,10 @@ h2 {
 #library-faq,
 #patron-faq {
   background-color: #ff5e2b;
+}
+
+.card .card-image,
+.card .card-image .image img {
+  max-width: 200px;
+  margin: auto;
 }
