@@ -21,10 +21,6 @@ h2 {
   font-family: 'Hind Vadodara', sans-serif;
 }
 
-#categories {
-  max-height: 50vh;
-}
-
 .is-clicked {
   background-color: #30a0e1;
   color: black;
@@ -43,4 +39,15 @@ h2 {
 .card .card-image .image img {
   max-width: 200px;
   margin: auto;
+}
+
+.button {
+  margin-top: 1.25em;
+}
+
+#categories {
+  height: 96.3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
