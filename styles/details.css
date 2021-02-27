@@ -3,10 +3,27 @@ body {
   font-family: 'Maven Pro', sans-serif;
 }
 
+#sidebar {
+  background-color: #30a0e1;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.message {
+  margin: 2em;
+}
+
 h1 {
   font-family: 'Exo', sans-serif;
 }
 
 h2 {
   font-family: 'Hind Vadodara', sans-serif;
+}
+
+.column.is-two-thirds {
+  padding: 2em;
 }
