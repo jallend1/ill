@@ -1,14 +1,13 @@
 body {
-  min-height: 100vh;
-  font-family: "Maven Pro", sans-serif;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 h1 {
-  font-family: "Exo", sans-serif;
+  font-family: 'Exo', sans-serif;
 }
 
 h2 {
-  font-family: "Hind Vadodara", sans-serif;
+  font-family: 'Hind Vadodara', sans-serif;
 }
 
 #head {
@@ -31,4 +30,9 @@ h2 {
 
 .card {
   min-width: 200px;
+}
+
+.current-page {
+  background-color: #ff5e2b;
+  border-radius: 5%;
 }
