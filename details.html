@@ -8,6 +8,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&family=Hind+Vadodara:wght@300&family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/details.css">
     <title>Behind the Scenes of ILL</title>
   </head>
   <body>
@@ -39,14 +45,13 @@
         </div>
       </div>
     </nav>
-    <div class="container">
       <div class="columns">
-        <header class="column">
-          <h1 class="title is-1 has-text-centered">
+        <header class="column is-one-fourth">
+          <h1 class="title is-2 has-text-centered">
             Behind the Scenes of Interlibrary Loan
           </h1>
           <h2 class="subtitle has-text-centered">
-            A Generic Public Library System
+            Generic Public Library System
           </h2>
           <div class="message is-info">
             <div class="message-header">
@@ -65,21 +70,20 @@
             </div>
           </div>
         </header>
-        <main class="column is-four-fifths">
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <div class="tile is-child box notification is-primary">
-                <h3 class="title is-4 has-text-centered">
-                  What in the world was I going to put here?
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Animi voluptatum error qui nostrum repudiandae distinctio ipsa
-                  modi aperiam dolorum in?
-                </p>
-              </div>
-              <div class="tile"></div>
-              <div class="tile box is-child notification is-link">
+        <main class="column is-two-thirds">
+            <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <div class="tile is-child box notification is-primary ">
+                  <h3 class="title is-4 has-text-centered">
+                    What in the world was I going to put here?
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Animi voluptatum error qui nostrum repudiandae distinctio ipsa
+                    modi aperiam dolorum in?
+                  </p>
+                </div>
+              <div class="tile box is-child notification is-link mb-6">
                 <h3 class="title is-4 has-text-centered">
                   How many items does GPLS borrow?
                 </h3>
@@ -89,7 +93,6 @@
                   nostrum atque? Numquam?
                 </p>
               </div>
-              <div class="tile"></div>
               <div class="tile box is-child notification is-danger">
                 <h3 class="title is-4 has-text-centered">
                   How many items does GPLS lend?
@@ -113,7 +116,6 @@
                 molestias maiores impedit aliquid.
               </p>
             </div>
-            <div class="tile"></div>
             <div class="tile is-child box notification is-info">
               <h3 class="title is-4 has-text-centered">
                 Most generous libraries?
@@ -124,7 +126,6 @@
                 at inventore nulla.
               </p>
             </div>
-            <div class="tile"></div>
             <div class="tile is-child box notification is-warning">
               <h3 class="title is-4 has-text-centered">
                 Our biggest fans? (Biggest Borrower)
@@ -138,7 +139,6 @@
           </div>
         </main>
       </div>
-    </div>
     <script src="app.js"></script>
   </body>
 </html>
