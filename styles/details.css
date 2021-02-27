@@ -3,9 +3,13 @@ body {
   font-family: 'Maven Pro', sans-serif;
 }
 
+nav {
+  height: 4vh;
+}
+
 #sidebar {
   background-color: #30a0e1;
-  height: 97vh;
+  height: 96vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +17,8 @@ body {
 }
 
 .message {
-  margin: 2em;
+  margin: 2em auto;
+  max-width: 75%;
 }
 
 h1 {
