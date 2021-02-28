@@ -1,9 +1,15 @@
 const burger = document.getElementById("burger");
 const $faqButtons = document.getElementsByClassName("faq-button") || null;
 const $form = document.getElementsByTagName('form')[0] || null;
+const $submittedRequest = document.getElementById('submittedRequest') || null;
 
+const displayRequest = () => { 
+  const requestDetails = JSON.parse(localStorage.getItem('requestDetails'));
+  $submittedRequest.innerHTML = (`
+    <p>hello</p>
+  `)
+}
 const handleSubmit = e => {
-  e.preventDefault();
   localStorage.clear();
   const requestDetails = {
     'barcode': e.target.barcode.value,
@@ -68,7 +74,9 @@ if ($faqButtons) {
     button.addEventListener("click", showFAQ);
   }
 }
-
 if ($form){
   $form.addEventListener('submit', handleSubmit);
+}
+else if($submittedRequest){
+  displayRequest();
 }
