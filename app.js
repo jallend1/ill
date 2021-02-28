@@ -5,9 +5,10 @@ const $submittedRequest = document.getElementById('submittedRequest') || null;
 
 const displayRequest = () => { 
   const requestDetails = JSON.parse(localStorage.getItem('requestDetails'));
-  $submittedRequest.innerHTML = (`
-    <p>hello</p>
-  `)
+  const itemFields = Object.keys(requestDetails);
+  itemFields.forEach(info => {
+    document.getElementById(info).innerText = requestDetails[info];
+  });
 }
 const handleSubmit = e => {
   localStorage.clear();

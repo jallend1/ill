@@ -18,44 +18,62 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="./styles/app.css" />
+  <link rel="stylesheet" href="./styles/submitted.css">
     <title>GPLS Interlibrary Loan Submitted!</title>
 </head>
 <body>
-    <nav class="navbar is-white">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <div class="icon">
-            <span class="icon material-icons mr-2"> local_library </span>
-          </div>
-          <div class="title is-4">GPLS Interlibrary Loan</div>
-        </a>
-        <a
-          id="burger"
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarContent"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div class="navbar-menu pr-5" id="navbarContent">
-        <div class="navbar-end">
-          <a href="index.html" class="navbar-item current-page has-text-white"
-            >Home</a
-          >
-          <a href="request.html" class="navbar-item">Submit a Request</a>
-          <a href="team.html" class="navbar-item">Meet the Team</a>
-          <a href="faq.html" class="navbar-item">FAQ</a>
-          <a href="details.html" class="navbar-item">Stats</a>
+    <header>
+        <nav class="navbar is-white">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+            <div class="icon">
+                <span class="icon material-icons mr-2"> local_library </span>
+            </div>
+            <div class="title is-4">GPLS Interlibrary Loan</div>
+            </a>
+            <a
+            id="burger"
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarContent"
+            >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
         </div>
-      </div>
-    </nav>
-    <h1>Request Information</h1>
-    <div id="submittedRequest"></div>
+        <div class="navbar-menu pr-5" id="navbarContent">
+            <div class="navbar-end">
+            <a href="index.html" class="navbar-item"
+                >Home</a
+            >
+            <a href="request.html" class="navbar-item">Submit a Request</a>
+            <a href="team.html" class="navbar-item">Meet the Team</a>
+            <a href="faq.html" class="navbar-item">FAQ</a>
+            <a href="details.html" class="navbar-item">Stats</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="title is-1 has-text-centered has-text-white">Request Information</h1>
+        <h2 class="subtitle has-text-centered">Confirmation of Your Request Details</h2>
+        <div class="box" id="submittedRequest">
+            <h2 class="subtitle is-3 has-text-centered">Your barcode: <span id="barcode"></span></h2>
+            <h2 class="subtitle is-3 has-text-centered">Your name: <span id="name"></span></h2>
+            <h2 class="subtitle is-3 has-text-centered">Your phone number: <span id="phone"></span></h2>
+            <h2 class="subtitle is-3 has-text-centered">Your email: <span id="email"></span></h2>
+            <h2 class="subtitle is-3 has-text-centered">Your desired pickup location: <span id="location"></span></h2>
+            <h2 class="subtitle is-3 has-text-centered">Item title: <span id="title"></span></h2>
+            <h2 class="subtitle is-3 has-text-centered">Item author: <span id="author"></span></h2>
+            <h2 class="subtitle is-3 has-text-centered">Item ISBN: <span id="isbn"></span></h2>
+            <h2 class="subtitle is-3 has-text-centered">Year published: <span id="year"></span></h2>
+            <h2 class="subtitle is-3 has-text-centered">Additional info: <span id="details"></span></h2>
+        </div>
+        <h1 class="title is-1 has-text-centered has-text-white">Thank you for your request!</h1>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
