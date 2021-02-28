@@ -1,5 +1,24 @@
 const burger = document.getElementById("burger");
 const $faqButtons = document.getElementsByClassName("faq-button") || null;
+const $form = document.getElementsByTagName('form')[0] || null;
+
+const handleSubmit = e => {
+  e.preventDefault();
+  localStorage.clear();
+  const requestDetails = {
+    'barcode': e.target.barcode.value,
+    'name': e.target.name.value,
+    'phone': e.target.phone.value,
+    'email': e.target.email.value,
+    'location': e.target["location-select"].value,
+    'title': e.target.title.value,
+    'author': e.target.author.value,
+    'isbn': e.target.isbn.value,
+    'year': e.target.year.value,
+    'details': e.target.details.value
+  }
+  localStorage.setItem('requestDetails', JSON.stringify(requestDetails))
+}
 
 const showFAQ = (e) => {
   for (let i = 0; i < $faqButtons.length; i++) {
@@ -36,8 +55,6 @@ const showFAQ = (e) => {
   }
 };
 
-const resetFAQs = () => {};
-
 const showMenu = () => {
   const $menu = document.getElementById("navbarContent");
   burger.classList.toggle("is-active");
@@ -50,4 +67,8 @@ if ($faqButtons) {
   for (button of $faqButtons) {
     button.addEventListener("click", showFAQ);
   }
+}
+
+if ($form){
+  $form.addEventListener('submit', handleSubmit);
 }
