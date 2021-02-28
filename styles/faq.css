@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
 }
 
 header {
@@ -14,11 +14,11 @@ header {
 }
 
 h1 {
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
 }
 
 h2 {
-  font-family: 'Hind Vadodara', sans-serif;
+  font-family: "Hind Vadodara", sans-serif;
 }
 
 .is-clicked {

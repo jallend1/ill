@@ -13,10 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&family=Hind+Vadodara:wght@300&family=Maven+Pro&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <link rel="stylesheet" href="styles/app.css">
-    <link rel="stylesheet" href="styles/faq.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/faq.css" />
     <title>Frequently Asked Questions - Interlibrary Loan</title>
   </head>
   <body>
@@ -24,13 +26,9 @@
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
           <div class="icon">
-            <span class="icon material-icons mr-2">
-              local_library
-            </span>
+            <span class="icon material-icons mr-2"> local_library </span>
           </div>
-          <div class="title is-4">
-            GPLS Interlibrary Loan
-          </div>
+          <div class="title is-4">GPLS Interlibrary Loan</div>
         </a>
         <a
           id="burger"
@@ -50,7 +48,9 @@
           <a href="index.html" class="navbar-item">Home</a>
           <a href="request.html" class="navbar-item">Submit a Request</a>
           <a href="team.html" class="navbar-item">Meet the Team</a>
-          <a href="faq.html" class="navbar-item current-page has-text-white">FAQ</a>
+          <a href="faq.html" class="navbar-item current-page has-text-white"
+            >FAQ</a
+          >
           <a href="details.html" class="navbar-item">Stats</a>
         </div>
       </div>
@@ -58,9 +58,13 @@
     <div class="columns">
       <header class="column is-one-fifth">
         <div class="headings">
-          <h1 class="title is-1 has-text-centered has-text-white">Frequently Asked Questions</h1>
-          <h2 class="subtitle has-text-centered has-text-white">Generic Public Library System</h2>
-        </div>    
+          <h1 class="title is-1 has-text-centered has-text-white">
+            Frequently Asked Questions
+          </h1>
+          <h2 class="subtitle has-text-centered has-text-white">
+            Generic Public Library System
+          </h2>
+        </div>
       </header>
       <section class="section column is-one-fifth" id="categories">
         <div class="card mb-5" id="patron">
@@ -72,11 +76,15 @@
           </div>
           <div class="card-content">
             <div class="content has-text-centered">
+              <div>If you are a GPLS patron who wants to borrow something:</div>
               <div>
-                If you are a GPLS patron who wants to borrow something:  
-              </div>
-              <div>
-                <button class="button faq-button has-text-white is-rounded" id="patron-faq" data-target="patrons">Show patron FAQs</button>
+                <button
+                  class="button faq-button has-text-white is-rounded"
+                  id="patron-faq"
+                  data-target="patrons"
+                >
+                  Show patron FAQs
+                </button>
               </div>
             </div>
           </div>
@@ -90,135 +98,143 @@
           <div class="card-content">
             <div class="content has-text-centered">
               <div>
-                Head here if you're a library system wanting to borrow one of our
-                items
+                Head here if you're a library system wanting to borrow one of
+                our items
               </div>
               <div>
-                <button class="button faq-button has-text-white is-rounded" id="library-faq" data-target="libraries">Show library FAQs</button>
+                <button
+                  class="button faq-button has-text-white is-rounded"
+                  id="library-faq"
+                  data-target="libraries"
+                >
+                  Show library FAQs
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
       <div class="card" id="faqs">
-      <section class="is-hidden box" id="patrons">
-        <h3 class="title is-3 has-text-centered">For GPLS Patrons</h3>
-        <ul>
-          <li class="block">
-            <div class="box">
-              <h3>What is Interlibrary Loan (ILL)?</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Blanditiis fugit ipsa tempora repellendus porro repellat
-                mollitia eligendi ut reprehenderit consequuntur!
-              </p>
-            </div>
-          </li>
-          <li class="block">
-            <div class="box">
-              <h3>Who can use the ILL service?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-                laudantium, totam quisquam eaque iusto quas sapiente animi
-                soluta consectetur dolorum?
-              </p>
-            </div>
-          </li>
-          <li class="block">
-            <div class="box">
-              <h3>What type of items can I get through ILL?</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                earum id ex odio voluptatum aut hic quis, incidunt qui ipsam.
-              </p>
-            </div>
-          </li>
-          <li class="block">
-            <div class="box">
-              <h3>What does it cost?</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                optio obcaecati iure eveniet voluptates, repellat assumenda
-                commodi ab earum reiciendis.
-              </p>
-            </div>
-          </li>
-          <li class="block">
-            <div class="box">
-              <h3>How long does it take?</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-                repellendus eum ad voluptate architecto corporis ab neque dolor,
-                hic officiis.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section id="libraries" class="box is-hidden">
-        <h3 class="title is-3 has-text-centered">For Other Library Systems</h3>
-        <ul>
-          <li class="block">
-            <div class="box">
-              <h3>How can we submit requests to you?</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Blanditiis fugit ipsa tempora repellendus porro repellat
-                mollitia eligendi ut reprehenderit consequuntur!
-              </p>
-            </div>
-          </li>
-          <li class="block">
-            <div class="box">
-              <h3>
-                Our patron damaged an item we borrowed from you. How much does
-                it cost to replace?
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-                laudantium, totam quisquam eaque iusto quas sapiente animi
-                soluta consectetur dolorum?
-              </p>
-            </div>
-          </li>
-          <li class="block">
-            <div class="box">
-              <h3>How can I get an invoice?</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                earum id ex odio voluptatum aut hic quis, incidunt qui ipsam.
-              </p>
-            </div>
-          </li>
-          <li class="block">
-            <div class="box">
-              <h3>
-                What is your institution's federal tax identification number
-                (FEIN)?
-              </h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                optio obcaecati iure eveniet voluptates, repellat assumenda
-                commodi ab earum reiciendis.
-              </p>
-            </div>
-          </li>
-          <li class="block">
-            <div class="box">
-              <h3>
-                I don't see my question here. Can I reach out to someone
-                directly?
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-                repellendus eum ad voluptate architecto corporis ab neque dolor,
-                hic officiis.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </div>
+        <section class="is-hidden box" id="patrons">
+          <h3 class="title is-3 has-text-centered">For GPLS Patrons</h3>
+          <ul>
+            <li class="block">
+              <div class="box">
+                <h3>What is Interlibrary Loan (ILL)?</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Blanditiis fugit ipsa tempora repellendus porro repellat
+                  mollitia eligendi ut reprehenderit consequuntur!
+                </p>
+              </div>
+            </li>
+            <li class="block">
+              <div class="box">
+                <h3>Who can use the ILL service?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+                  laudantium, totam quisquam eaque iusto quas sapiente animi
+                  soluta consectetur dolorum?
+                </p>
+              </div>
+            </li>
+            <li class="block">
+              <div class="box">
+                <h3>What type of items can I get through ILL?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  earum id ex odio voluptatum aut hic quis, incidunt qui ipsam.
+                </p>
+              </div>
+            </li>
+            <li class="block">
+              <div class="box">
+                <h3>What does it cost?</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+                  optio obcaecati iure eveniet voluptates, repellat assumenda
+                  commodi ab earum reiciendis.
+                </p>
+              </div>
+            </li>
+            <li class="block">
+              <div class="box">
+                <h3>How long does it take?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ullam repellendus eum ad voluptate architecto corporis ab
+                  neque dolor, hic officiis.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="libraries" class="box is-hidden">
+          <h3 class="title is-3 has-text-centered">
+            For Other Library Systems
+          </h3>
+          <ul>
+            <li class="block">
+              <div class="box">
+                <h3>How can we submit requests to you?</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Blanditiis fugit ipsa tempora repellendus porro repellat
+                  mollitia eligendi ut reprehenderit consequuntur!
+                </p>
+              </div>
+            </li>
+            <li class="block">
+              <div class="box">
+                <h3>
+                  Our patron damaged an item we borrowed from you. How much does
+                  it cost to replace?
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+                  laudantium, totam quisquam eaque iusto quas sapiente animi
+                  soluta consectetur dolorum?
+                </p>
+              </div>
+            </li>
+            <li class="block">
+              <div class="box">
+                <h3>How can I get an invoice?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                  earum id ex odio voluptatum aut hic quis, incidunt qui ipsam.
+                </p>
+              </div>
+            </li>
+            <li class="block">
+              <div class="box">
+                <h3>
+                  What is your institution's federal tax identification number
+                  (FEIN)?
+                </h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+                  optio obcaecati iure eveniet voluptates, repellat assumenda
+                  commodi ab earum reiciendis.
+                </p>
+              </div>
+            </li>
+            <li class="block">
+              <div class="box">
+                <h3>
+                  I don't see my question here. Can I reach out to someone
+                  directly?
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ullam repellendus eum ad voluptate architecto corporis ab
+                  neque dolor, hic officiis.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
